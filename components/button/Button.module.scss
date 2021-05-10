@@ -1,0 +1,24 @@
+@import 'styles/master';
+
+.button {
+  padding: 0.7rem 1.3rem;
+  outline: none;
+  background-color: $primary-color;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  border: 2px solid $primary-color;
+  border-radius: 1.5rem;
+  margin-right: 0.5rem;
+
+  &:hover {
+    transform: translateY(0.2rem);
+  }
+}
+
+.secondaryButton {
+  background-color: white;
+  color: $primary-color;
+}

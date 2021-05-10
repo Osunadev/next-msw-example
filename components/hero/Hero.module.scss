@@ -1,0 +1,56 @@
+@import 'styles/master';
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+
+  > .heroCol {
+    flex: 1 0 48%;
+    height: 100%;
+
+    &:first-child {
+      padding-right: 2%;
+    }
+
+    &:last-child {
+      padding-left: 2%;
+    }
+  }
+
+  > .contentCol {
+    > h1.heroTitle {
+      font-size: 2.3rem;
+    }
+
+    > p.heroParagraph {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      margin: 2rem 0 1.5rem 0;
+    }
+  }
+
+  > .imageCol {
+    position: relative;
+    line-height: 0;
+
+    > .heroImgRectangle {
+      z-index: -1;
+      position: absolute;
+      top: 2rem;
+      bottom: -2rem;
+      left: calc(4% + 2rem);
+      right: -2rem;
+      background-color: $primary-color;
+    }
+
+    > .leftHeroImgRectangle {
+      right: 3rem;
+      left: -2rem;
+    }
+
+    > img.heroImg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

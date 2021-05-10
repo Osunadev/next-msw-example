@@ -1,0 +1,24 @@
+@import 'styles/master';
+
+.layout {
+  padding: 2rem 1.5rem;
+
+  // Tablet
+  @media (min-width: $tablet-breakpoint) {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 44rem;
+  }
+
+  // Laptops
+  @media (min-width: $laptop-breakpoint) {
+    padding: 2rem 3rem;
+    width: 58rem;
+  }
+
+  // Desktops
+  @media (min-width: $desktop-breakpoint) {
+    padding: 2rem 4rem;
+    width: 72rem;
+  }
+}

@@ -1,0 +1,58 @@
+@import 'styles/master';
+
+.globalHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .headerContainer {
+    display: inline-block;
+    padding-right: 1.75rem;
+
+    .headerTitle {
+      font-size: 2.5rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+      color: $primary-color;
+    }
+
+    .headerNavigation {
+      padding-top: 1rem;
+
+      > ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+
+        > .navOption {
+          font-size: 1.4rem;
+          padding-right: 0.75rem;
+
+          &:last-child {
+            padding-right: 0;
+          }
+
+          > a {
+            text-decoration: none;
+            transition: all 0.2s ease-out;
+            color: $secondary-color;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+
+        > .navOptionSel {
+          > a {
+            font-weight: 700;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}

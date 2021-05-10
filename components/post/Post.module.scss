@@ -1,0 +1,32 @@
+@import '/styles/master';
+
+.blogPost {
+  background: white;
+  display: flex;
+  width: calc(50% - 0.5rem);
+  padding-bottom: 3rem;
+
+  .postImage {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 50%;
+    max-width: 200px;
+    object-fit: cover;
+  }
+
+  .textCol {
+    width: 50%;
+    border: 2px solid $secondary-color;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-left: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > p {
+      word-break: break-word;
+    }
+  }
+}

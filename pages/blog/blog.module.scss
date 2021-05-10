@@ -1,0 +1,13 @@
+.postsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.blogDescription {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-right: 3rem;
+}
